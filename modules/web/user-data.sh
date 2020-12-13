@@ -7,6 +7,7 @@ dnf -y module install php:remi-7.4
 dnf -y install php php-mysqlnd php-gd php-xml php-mbstring php-json
 
 systemctl enable httpd
+sed -i 's/enforcing/disabled/g' /etc/selinux/config
 setenforce 0
 cd /opt/
 wget https://releases.wikimedia.org/mediawiki/1.35/mediawiki-1.35.0.tar.gz
