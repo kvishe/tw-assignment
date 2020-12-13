@@ -3,10 +3,10 @@ First Create web servers and the db servers.
 To Create Web Cluster
 Go to prod/web and use the below commands to build, review and execute.
 
-terraform init
-terraform get
-terraform plan
-terraform apply.
+terraform init <br/>
+terraform get <br/>
+terraform plan <br/>
+terraform apply <br/>
 
 To Create DB
 Go to prod/db and use the above commands to build, review and execute. Provide dbpassword
